@@ -1,0 +1,134 @@
+body {
+  font-family: "Montserrat", "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+  margin-top: 1.5em;
+}
+
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+  font-size: 36px;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+.btn,
+.wp-block-button .wp-block-button__link {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #fff;
+  transition: 0.3s;
+  margin: 0 auto;
+  padding: 1.2em 2em;
+  border: 1px solid #333;
+  background-color: #333;
+}
+
+.btn.is-style-outline,
+.wp-block-button.is-style-outline .wp-block-button__link {
+  color: #333;
+  border: 1px solid #333;
+  background-color: #fff;
+}
+
+.wp-block-media-text__content p:not(:last-child) {
+  margin: 0;
+}
+
+.wp-block[data-type="core/widget-area"] {
+  max-width: 860px;
+}
+
+/* 大見出し */
+.title,
+.is-style-heading-primary {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--site-main-color, #333);
+  margin-bottom: 30px;
+}
+
+/* 見出し：左ボーダー付き */
+.is-style-heading-border-left {
+  position: relative;
+  font-size: 20px;
+  color: var(--site-text-color, #333);
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+
+.is-style-heading-border-left::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 4px;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #333;
+  background-color: var(--site-text-color, #333);
+}
+
+/* 見出し：下ボーダー付き */
+.is-style-heading-border-bottom {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: var(--site-text-color, #333);
+  margin-bottom: 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid var(--site-text-color, #333);
+}
+
+/* table01 */
+.is-style-table01 td,
+.is-style-table01 th {
+  border: none;
+}
+.is-style-table01 thead {
+  border-bottom: 2px solid var(--site-text-color, #333);
+}
+.is-style-table01 tr {
+  border-bottom: 1px solid var(--site-bg-parts-color, #ccc);
+}
+
+/* table02 */
+.is-style-table02 thead {
+  color: #fff;
+  border-bottom: none;
+  background-color: var(--site-main-color, #333);
+}
+.is-style-table02 td,
+.is-style-table02 th {
+  border: none;
+}
+.is-style-table02 tr {
+  border-bottom: 1px solid var(--site-bg-parts-color, #ccc);
+}
